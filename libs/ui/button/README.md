@@ -11,10 +11,55 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Installation
+
+### Packages that need to be installed:
+
+  * @terminus/ui-button
+  * @terminus/ui-icon
+  * @terminus/ui-utilities
+  * @terminus/ngx-tools
+  * @terminus/design-tokens
+  * @terminus/ui-styles
+  * @angular/material/button
+  * @angular/material/progress-spinner
+  * @angular/cdk/a11y
+  * @angular/cdk/coercion
+  * date-fns
+
+### Modules that need to be in NgModule
+
+  * TsButtonModule
+
+### Styles to be added
+ At top level `styles.scss`, add these styles:
+
+```css
+@import '~@terminus/design-tokens/css/design-tokens.css';
+@import '~@terminus/design-tokens/css/library-design-tokens.css';
+@import '~@terminus/ui-styles/terminus-ui.css';
+@import '~@terminus/ui-styles/helpers';
+```
+
 ## Usage
 ```html
-<ts-button (clicked)="myFunction($event)>Click Me!</ts-button>
+<ts-button
+  [buttonType]="buttonType"
+  [collapsed]="collapsed"
+  [format]="format"
+  [isDisabled]="isDisabled"
+  [id]="id"
+  [showProgress]="showProgress"
+  [tabIndex]="tabIndex"
+  [theme]="theme"
+>Button content</ts-button>
 ```
+
+ * Use the `theme` parameter to change the color. Support three different themes: `primary`, `accent` and `warn`.
+ * There are three different `buttonType`: `button`, `search` and `submit`.
+ * Use `format` to set the style as `filled` or `hollow`.
+ * `isDisabled` and `showProgress` are boolean inputs.
+
 
 
 <!-- Links -->
