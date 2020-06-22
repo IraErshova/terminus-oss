@@ -26,6 +26,50 @@ An autocomplete that allows single or multiple selections.
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Installation
+
+### Packages that need to be included
+
+  * @angular/cdk
+  * @angular/flex-layout
+  * @angular/material
+  * @terminus/design-tokens
+  * @terminus/ui-styles
+  * @terminus/ui-checkbox
+  * @terminus/ui-chip
+  * @terminus/ui-form-field
+  * @terminus/ui-icon
+  * @terminus/ui-input
+  * @terminus/ui-option
+  * @terminus/ui-validation-messages
+  * @terminus/ui-utilities
+  * @terminus/ngx-tools
+
+### Modules that need to be in NgModule
+
+  * ReactiveFormsModule
+  * TsAutocompleteModule
+  * TsOptionModule
+
+### Styles to be added
+
+ At top level `styles.scss`, add these styles:
+
+```css
+@import '~@terminus/design-tokens/css/design-tokens.css';
+@import '~@terminus/design-tokens/css/library-design-tokens.css';
+@import '~@terminus/ui-styles/terminus-ui.css';
+@import '~@terminus/ui-styles/helpers';
+```  
+
+### Links to be added
+
+In order to have material icons shown up correctly, add this to the top level html
+
+```css
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
 ## Usage
 
 ### Basic usage with a FormControl
