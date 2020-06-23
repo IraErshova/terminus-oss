@@ -17,6 +17,27 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Installation
+
+  * @angular/material
+  * @terminus/design-tokens
+  * @terminus/ngx-tools
+  * @terminus/ui-card
+  * @terminus/ui-icon
+  * @terminus/ui-utilities
+
+### Modules that need to be in NgModule
+
+  * TsCardModule
+  
+### Links to be added
+
+In order to have material icons shown up correctly, add this to the top level html
+
+```css
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
 ## Usage
 
 Wrap the card component around your content:

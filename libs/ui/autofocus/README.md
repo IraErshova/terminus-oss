@@ -14,6 +14,19 @@ A directive that gives focus to an element on load.
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Installation
+
+### Packages that need to be included
+
+  * @terminus/ui-autofocus
+  * @terminus/ui-utilities
+  * @terminus/ngx-tools
+  * date-fns
+
+### Modules that need to be in NgModule
+
+  * TsAutofocusModule
+
 ## Usage
 
 The `tsAutofocus` directive can be used on any element that has a `.focus()` method. This includes
