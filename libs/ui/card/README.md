@@ -7,6 +7,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Installation](#installation)
+  - [Modules that need to be in NgModule](#modules-that-need-to-be-in-ngmodule)
+  - [Links to be added](#links-to-be-added)
 - [Usage](#usage)
   - [Interactivity](#interactivity)
   - [Centered content](#centered-content)

@@ -9,6 +9,9 @@ A directive that gives focus to an element on load.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Installation](#installation)
+  - [Packages that need to be included](#packages-that-need-to-be-included)
+  - [Modules that need to be in NgModule](#modules-that-need-to-be-in-ngmodule)
 - [Usage](#usage)
   - [Binding](#binding)
 

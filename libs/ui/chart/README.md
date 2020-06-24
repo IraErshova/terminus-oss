@@ -7,6 +7,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Installation](#installation)
+  - [Packages to be installed](#packages-to-be-installed)
+  - [Modules that need to be in NgModule](#modules-that-need-to-be-in-ngmodule)
 - [Usage](#usage)
   - [Inject the needed libraries](#inject-the-needed-libraries)
   - [Set up the chart](#set-up-the-chart)
@@ -29,50 +32,9 @@
   * @terminus/ui-chart
   * date-fns
 
-### in the NgModule
+### Modules that need to be in NgModule
 
-```typescript
-import * as am4charts from '@amcharts/amcharts4/charts';
-import * as am4core from '@amcharts/amcharts4/core';
-import * as am4maps from '@amcharts/amcharts4/maps';
-// eslint-disable-next-line camelcase
-import am4themes_animated from '@amcharts/amcharts4/themes/animated';
-// eslint-disable-next-line no-duplicate-imports, camelcase
-import am4themes_material from '@amcharts/amcharts4/themes/animated';
-import {
-  TS_AMCHARTS_TOKEN,
-  TsAmChartsToken,
-  TsChartModule,
-} from '@terminus/ui-chart';
-
-import { AppComponent } from './app.component';
-
-export const amChartsFactory = (): TsAmChartsToken => ({
-  core: am4core,
-  charts: am4charts,
-  maps: am4maps,
-  // eslint-disable-next-line camelcase
-  themes: [am4themes_animated, am4themes_material],
-});
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    TsChartModule,
-  ],
-  providers: [
-    // Use the factory function to overwrite the `TS_AMCHARTS_TOKEN` injectable:
-    {
-      provide: TS_AMCHARTS_TOKEN,
-      useFactory: amChartsFactory,
-    },
-  ],
-  bootstrap: [AppComponent]
-})
-```
+  * TsChartModule
 
 ## Usage
 

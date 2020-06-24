@@ -7,6 +7,10 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Installation](#installation)
+  - [Packages to be installed](#packages-to-be-installed)
+  - [Modules that need to be in NgModule](#modules-that-need-to-be-in-ngmodule)
+  - [Styles](#styles)
 - [Usage](#usage)
   - [Reactive Forms](#reactive-forms)
   - [`ngModel`](#ngmodel)
@@ -14,6 +18,34 @@
 - [Test Helpers](#test-helpers)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Installation
+
+### Packages to be installed
+
+  * @angular/cdk
+  * @angular/material
+  * @terminus/design-tokens
+  * @terminus/ngx-tools
+  * @terminus/ui-checkbox
+  * @terminus/ui-utilities
+  * @terminus/ui-styles
+  * date-fns
+
+### Modules that need to be in NgModule
+
+  * TsCheckboxModule
+  
+### Styles
+
+On top level styles.css, add these:
+
+```css
+@import '~@terminus/design-tokens/css/design-tokens.css';
+@import '~@terminus/design-tokens/css/library-design-tokens.css';
+@import '~@terminus/ui-styles/terminus-ui.css';
+@import '~@terminus/ui-styles/helpers';
+```
 
 ## Usage
 
