@@ -31,6 +31,8 @@ NOTE: This component does not support a `FormControl`; it is a simple collection
 
 ## Installation
 
+### Packages that need to be included
+
   * @angular/cdk
   * @angular/material
   * @terminus/design-tokens

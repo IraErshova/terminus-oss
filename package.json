@@ -123,6 +123,8 @@
   "dependencies": {
     "@amcharts/amcharts4": "4.9.26",
     "@amcharts/amcharts4-geodata": "4.1.15",
+    "@angular-devkit/schematics": "^9.1.9",
+    "@angular-devkit/schematics-cli": "^0.1000.0",
     "@angular/animations": "9.1.11",
     "@angular/cdk": "9.2.4",
     "@angular/common": "9.1.11",
@@ -137,6 +139,7 @@
     "@ngrx/effects": "9.2.0",
     "@ngrx/store": "9.2.0",
     "@popperjs/core": "2.0.0",
+    "@schematics/angular": "^10.0.0",
     "@terminus/design-tokens": "2.0.7",
     "@terminus/ngx-tools": "8.0.5",
     "@terminus/ui-styles": "1.0.6",

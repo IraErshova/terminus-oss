@@ -67,7 +67,7 @@
 
 In order to have material icons shown up correctly, add this to the top level `index.html`
 
-```css
+```html
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
