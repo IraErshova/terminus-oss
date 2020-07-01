@@ -12,6 +12,7 @@ NOTE: This component does not support a `FormControl`; it is a simple collection
 **Table of Contents**
 
 - [Installation](#installation)
+  - [Packages that need to be included](#packages-that-need-to-be-included)
   - [Modules that need to be in NgModule](#modules-that-need-to-be-in-ngmodule)
   - [Styles to be added](#styles-to-be-added)
   - [Links to be added](#links-to-be-added)

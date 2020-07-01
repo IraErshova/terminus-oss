@@ -14,21 +14,25 @@ import {
  */
 export const ngAdd = () => (tree: Tree, context: SchematicContext): Tree => {
   [
-    '@angular/cdk: ^9.1.0',
+    'date-fns: 2.14.0',
     '@angular/common: ^9.1.0',
     '@angular/core: ^9.1.0',
+    '@angular/flex-layout: ~9.0.0-beta.29',
     '@angular/forms: ^9.1.0',
     '@angular/material: ^9.1.0',
     '@angular/platform-browser: ^9.1.0',
     '@terminus/design-tokens: ^2.0.2',
     '@terminus/ngx-tools: ^8.0.5',
-    '@terminus/ui-chip: ^1.0.0',
-    '@terminus/ui-icon: ^1.0.0',
-    '@terminus/ui-styles: ^1.0.0',
-    'date-fns: 2.14.0',
-    '@terminus/ui-utilities: ^1.0.0',
-    'rxjs: ^6.5.0',
     'tslib: ^1.10.0',
+    '@angular/cdk: 9.2.4',
+    '@terminus/ui-button: ^1.0.0',
+    '@terminus/ui-checkbox: ^1.0.0',
+    '@terminus/ui-confirmation: ^1.0.0',
+    '@terminus/ui-form-field: ^1.0.0',
+    '@terminus/ui-icon: ^1.0.0',
+    '@terminus/ui-utilities: ^1.0.0',
+    '@terminus/ui-styles: ^1.0.0',
+    '@terminus/ui-spacing: : ^1.0.0',
   ].map(p => {
     const individualPackage = p.split(':');
     const nodeDependency: NodeDependency = {

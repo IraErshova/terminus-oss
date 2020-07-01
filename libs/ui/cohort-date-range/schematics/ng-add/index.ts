@@ -8,94 +8,55 @@ import {
   NodeDependency,
   NodeDependencyType,
 } from '@schematics/angular/utility/dependencies';
-import { get } from 'http';
-import { of } from 'rxjs';
-import {
-  concatMap,
-  map,
-} from 'rxjs/operators';
 
-
-export const ngAdd = () => (tree: Tree, _context: SchematicContext) => of(
-  '@angular/cdk/',
-  '@angular/flex-layout',
-  '@terminus/ngx-tools',
-  '@terminus/design-tokens',
-  '@terminus/ui-checkbox',
-  '@terminus/ui-date-range',
-  '@terminus/ui-form-field',
-  '@terminus/ui-option',
-  '@terminus/ui-selection-list',
-  '@terminus/ui-input',
-  '@terminus/ui-checkbox',
-  '@terminus/ui-chip',
-  '@terminus/ui-cohort-date-range',
-  '@terminus/ui-form-field',
-  '@terminus/ui-icon',
-  '@terminus/ui-validation-messages',
-  '@terminus/ui-utilities',
-  '@terminus/ui-styles',
-  '@terminus/ui-pipes',
-  '@terminus/ui-validators',
-  'text-mask-addons',
-  'text-mask-core',
-  '@terminus/ui-spacing',
-  'date-fns',
-).pipe(
-  concatMap(name => getLatestNodeVersion(name)),
-  map(npmRegistryPackage => {
+/**
+ *
+ */
+export const ngAdd = () => (tree: Tree, context: SchematicContext): Tree => {
+  [
+    'date-fns: 2.14.0',
+    '@angular/common: ^9.1.0',
+    '@angular/core: ^9.1.0',
+    '@angular/flex-layout: ~9.0.0-beta.29',
+    '@angular/forms: ^9.1.0',
+    '@angular/platform-browser: ^9.1.0',
+    '@terminus/design-tokens: ^2.0.2',
+    '@terminus/ngx-tools: ^8.0.5',
+    '@terminus/ui-date-range: ^1.0.0',
+    '@terminus/ui-input: ^1.0.0',
+    '@terminus/ui-option: ^1.0.0',
+    '@terminus/ui-selection-list: ^1.0.0',
+    'tslib: ^1.10.0',
+    '@terminus/ui-cohort-date-range: ^1.0.0',
+    '@angular/cdk: 9.2.4',
+    '@angular/material: ^9.1.0',
+    '@terminus/ui-checkbox: ^1.0.0',
+    '@terminus/ui-chip: ^1.0.0',
+    '@terminus/ui-form-field: ^1.0.0',
+    '@terminus/ui-icon: ^1.0.0',
+    '@terminus/ui-utilities: ^1.0.0',
+    '@terminus/ui-styles: ^1.0.0',
+    '@terminus/ui-pipes: ^1.0.0',
+    '@terminus/ui-validators: ^1.0.0',
+    '@terminus/ui-validation-messages: ^1.0.0',
+    '@terminus/ui-spacing: : ^1.0.0',
+    'text-mask-addons: 3.8.0',
+    'text-mask-core: 5.1.2',
+  ].map(p => {
+    const individualPackage = p.split(':');
     const nodeDependency: NodeDependency = {
       type: NodeDependencyType.Default,
-      name: npmRegistryPackage.name,
-      version: npmRegistryPackage.version,
+      name: individualPackage[0],
+      version: individualPackage[1],
       overwrite: false,
     };
     addPackageJsonDependency(tree, nodeDependency);
-    _context.logger.info(`✅️ Added dependency: ${npmRegistryPackage.name}@${
-      npmRegistryPackage.version
-    }`);
-    _context.addTask(new NodePackageInstallTask());
-    return tree;
-  }),
-);
-
-export interface NpmRegistryPackage {
-  name: string;
-  version: string;
-}
-
-/**
- * @param packageName
- */
-export function getLatestNodeVersion(
-  packageName: string,
-): Promise<NpmRegistryPackage> {
-  const DEFAULT_VERSION = 'latest';
-  /**
-   * @param name
-   * @param version
-   */
-  const buildPackage = (
-    name: string,
-    version: string = DEFAULT_VERSION,
-  ): NpmRegistryPackage => ({ name,
-    version });
-
-  return new Promise(resolve => get(`http://registry.npmjs.org/${packageName}`, res => {
-    let rawData = '';
-    res.on('data', chunk => (rawData += chunk));
-    res.on('end', () => {
-      try {
-        const response = JSON.parse(rawData);
-        const version = (response && response['dist-tags']) || {};
-
-        resolve(buildPackage(response.name || packageName, version.latest));
-      } catch (e) {
-        resolve(buildPackage(packageName));
-      }
-    });
-  }).on('error', () => resolve(buildPackage(packageName))));
-
-
-}
-
+    context.logger.info(
+      `✅️ Added dependency: ${individualPackage[0]}@${
+        individualPackage[1]
+      }`,
+    );
+    context.addTask(new NodePackageInstallTask());
+  });
+  return tree;
+};

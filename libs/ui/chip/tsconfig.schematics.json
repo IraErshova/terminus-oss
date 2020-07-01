@@ -17,7 +17,7 @@
     "noUnusedParameters": true,
     "noUnusedLocals": true,
     "rootDir": "schematics",
-    "outDir": "../../../dist/libs/ui/cohort-date-range/schematics",
+    "outDir": "../../../dist/libs/ui/chip/schematics",
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "sourceMap": true,
