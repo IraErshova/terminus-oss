@@ -21,8 +21,16 @@ export const ngAdd = () => (tree: Tree, context: SchematicContext): Tree => {
     '@terminus/design-tokens: ^2.0.2',
     '@terminus/ngx-tools: ^8.0.5',
     '@terminus/ui-utilities: ^1.0.0',
-    '@terminus/ui-copy: ^1.0.0',
-    'date-fns: ^2.14.0'
+    '@terminus/ui-file-upload: ^1.0.0',
+    'date-fns: ^2.14.0',
+    '@terminus/ui-button: ^1.0.0',
+    '@terminus/ui-icon: ^1.0.0',
+    '@terminus/ui-icon-button: ^1.0.0',
+    '@terminus/ui-pipes: ^1.0.0',
+    '@terminus/ui-spacing: ^1.0.0',
+    '@terminus/ui-tooltip: ^1.0.0',
+    '@terminus/ui-validation-messages: ^1.0.0',
+    'rxjs: ^6.5.0'
   ].map(p => {
     const individualPackage = p.split(':');
     const nodeDependency: NodeDependency = {
