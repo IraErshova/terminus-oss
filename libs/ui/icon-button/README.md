@@ -8,6 +8,7 @@
 **Table of Contents**
 
 - [Installation](#installation)
+  - [Packages that need to be installed](#packages-that-need-to-be-installed)
   - [Modules that need to be in NgModule](#modules-that-need-to-be-in-ngmodule)
   - [Links to be added](#links-to-be-added)
 - [Usage](#usage)
@@ -17,6 +18,8 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Installation
+
+### Packages that need to be installed
 
   * @angular/material
   * @terminus/design-tokens

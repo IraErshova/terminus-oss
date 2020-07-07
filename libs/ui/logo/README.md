@@ -7,6 +7,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [Installation](#installation)
+  - [Packages that need to be installed](#packages-that-need-to-be-installed)
+  - [Modules that need to be in NgModule](#modules-that-need-to-be-in-ngmodule)
 - [Usage](#usage)
   - [Type](#type)
   - [Colors](#colors)
@@ -15,6 +18,22 @@
   - [Available logos](#available-logos)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Installation
+
+### Packages that need to be installed
+
+  * @angular/cdk
+  * @angular/flex-layout
+  * @angular/material
+  * @terminus/design-tokens
+  * @terminus/ngx-tools
+  * @terminus/ui-logo
+  * @terminus/ui-utilities
+
+### Modules that need to be in NgModule
+
+  * TsLogoModule
 
 ## Usage
 

@@ -8,6 +8,7 @@
 **Table of Contents**
 
 - [Installation](#installation)
+  - [Packages that need to be installed](#packages-that-need-to-be-installed)
   - [Modules that need to be in NgModule](#modules-that-need-to-be-in-ngmodule)
   - [Styles to be added](#styles-to-be-added)
   - [Links to be added](#links-to-be-added)
@@ -43,6 +44,8 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Installation
+
+### Packages that need to be installed
 
   * @angular/cdk
   * @angular/flex-layout
