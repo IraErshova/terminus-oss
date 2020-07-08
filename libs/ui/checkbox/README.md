@@ -31,6 +31,11 @@
   * @terminus/ui-utilities
   * @terminus/ui-styles
   * date-fns
+  
+  Using `ng add` command can help getting all the dependencies installed:
+  ```bash
+    ng add @terminus/ui-checkbox
+  ```
 
 ### Modules that need to be in NgModule
 

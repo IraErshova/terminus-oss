@@ -80,6 +80,12 @@ A custom select dropdown.
    * text-mask-addons
    * text-mask-core
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-select
+```
+
 ### Modules that need to be in NgModule
 
    * BrowserAnimationsModule,

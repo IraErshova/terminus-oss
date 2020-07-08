@@ -48,6 +48,12 @@
   * @terminus/ui-validation-messages
   * date-fns
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-radio-group
+```
+
 ### Modules that need to be in NgModule
 
   * TsRadioGroupModule

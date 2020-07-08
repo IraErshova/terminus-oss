@@ -31,6 +31,12 @@
   * @terminus/ui-logo
   * @terminus/ui-utilities
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-logo
+```
+
 ### Modules that need to be in NgModule
 
   * TsLogoModule

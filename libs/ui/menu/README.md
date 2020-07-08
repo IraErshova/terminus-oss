@@ -33,6 +33,12 @@
   * @terminus/ui-utilities
   * date-fns
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-menu
+```
+
 ### Modules that need to be in NgModule
 
   * TsMenuModule

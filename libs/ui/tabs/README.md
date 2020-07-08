@@ -37,6 +37,12 @@
    * @terminus/ui-tabs
    * date-fns
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-tabs
+```
+
 ### Modules that need to be in NgModule
 
    * BrowserAnimationsModule

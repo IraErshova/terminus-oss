@@ -44,6 +44,11 @@ NOTE: This component does not support a `FormControl`; it is a simple collection
   * @terminus/ui-styles
   * date-fns
   
+  Using `ng add` command can help getting all the dependencies installed:
+  ```bash
+    ng add @terminus/ui-chip
+  ```
+  
 ### Modules that need to be in NgModule
 
   * TsChipModule

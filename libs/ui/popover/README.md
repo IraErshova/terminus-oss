@@ -39,6 +39,12 @@ Popover component is designed to pop up simple or complex content based on a use
   * @terminus/ui-popover
   * date-fns
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-popover
+```
+
 ### Modules that need to be in NgModule
 
   * TsPopoverModule

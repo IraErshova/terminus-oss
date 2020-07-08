@@ -49,6 +49,12 @@ A drag'n'drop file upload component.
   *  @terminus/ui-utilities
   *  @terminus/ui-validation-messages
   *  date-fns
+  
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-file-upload
+```
 
 ### Modules that need to be in NgModule
 

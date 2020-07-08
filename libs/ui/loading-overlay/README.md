@@ -26,6 +26,11 @@
   * @terminus/ui-loading-overlay
   * @terminus/ui-utilities
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-loading-overlay
+```
 ### Modules that need to be in NgModule
 
   * TsLoadingOverlayModule

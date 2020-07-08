@@ -39,6 +39,12 @@
   * text-mask-addons
   * text-mask-core
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-paginator
+```
+
 ### Modules that need to be in NgModule
 
   * TsPaginatorModule

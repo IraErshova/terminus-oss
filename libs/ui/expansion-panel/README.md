@@ -50,11 +50,16 @@ Expansion panel & accordion components.
   *  date-fns
   *  tslib
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-expansion-panel
+```
+
 ### Modules that need to be in NgModule
 
   * BrowserAnimationsModule,
   * TsExpansionPanelModule,
-
 
 ## Usage
 

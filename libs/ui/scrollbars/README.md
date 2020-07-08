@@ -38,6 +38,12 @@
   * date-fns
   * ngx-perfect-scrollbar
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-scrollbars
+```
+
 ### Modules that need to be in NgModule
 
   * TsScrollbarsModule

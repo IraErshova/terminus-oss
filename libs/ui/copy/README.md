@@ -46,6 +46,12 @@ This component is used to contain very long strings that users may need to copy.
   *  date-fns
   *  tslib
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-copy
+```
+
 ### Modules that need to be in NgModule
 
   * TsCopyModule

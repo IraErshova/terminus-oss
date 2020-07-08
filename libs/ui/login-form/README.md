@@ -41,6 +41,11 @@
    *  text-mask-core
    *  date-fns
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-login-form
+```
 
 ### Modules that need to be in NgModule
 

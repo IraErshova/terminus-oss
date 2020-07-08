@@ -46,9 +46,19 @@ An autocomplete that allows single or multiple selections.
   * @terminus/ui-icon
   * @terminus/ui-input
   * @terminus/ui-option
+  * @terminus/ui-spacing
+  * @terminus/ui-pipes
   * @terminus/ui-validation-messages
+  * @terminus/ui-validators
   * @terminus/ui-utilities
   * @terminus/ngx-tools
+  * text-mask-addons
+  * text-mask-core
+  
+  Using `ng add` command can help getting all the dependencies installed:
+  ```bash
+    ng add @terminus/ui-autocomplete
+  ```
 
 ### Modules that need to be in NgModule
 

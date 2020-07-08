@@ -35,6 +35,12 @@ A simple toggle, or 'switch', component.
    * @terminus/ui-toggle
    * date-fns
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-toggle
+```
+
 ### Modules that need to be in NgModule
 
    * TsToggleModule,

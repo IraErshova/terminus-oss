@@ -25,6 +25,11 @@ A directive that gives focus to an element on load.
   * @terminus/ui-utilities
   * @terminus/ngx-tools
   * date-fns
+  
+  Using `ng add` command can help getting all the dependencies installed:
+  ```bash
+  ng add @terminus/ui-autofocus
+  ```
 
 ### Modules that need to be in NgModule
 

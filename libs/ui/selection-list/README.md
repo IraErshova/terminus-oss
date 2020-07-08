@@ -56,6 +56,12 @@
    * text-mask-addons
    * text-mask-core
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-selection-list
+```
+
 ### Modules that need to be in NgModule
 
    * BrowserAnimationsModule,

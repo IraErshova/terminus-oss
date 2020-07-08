@@ -33,6 +33,12 @@
   * @terminus/ui-pipes
   * date-fns: ^2.14.0
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-pipes
+```
+
 ### Modules that need to be in NgModule
 
   * TsPipesModule

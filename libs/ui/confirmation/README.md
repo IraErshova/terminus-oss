@@ -55,6 +55,11 @@ Basic flow:
   *  date-fns
   *  tslib
   
+  Using `ng add` command can help getting all the dependencies installed:
+  ```bash
+    ng add @terminus/ui-confirmation
+  ```
+  
 ### Modules that need to be in NgModule
 
   * BrowserAnimationsModule,

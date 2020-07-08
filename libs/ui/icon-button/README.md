@@ -27,6 +27,12 @@
   * @terminus/ui-icon
   * @terminus/ui-icon-button
   * @terminus/ui-utilities
+  
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-icon-button
+```
 
 ### Modules that need to be in NgModule
 

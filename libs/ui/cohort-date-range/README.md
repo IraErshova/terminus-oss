@@ -46,6 +46,11 @@
   * @terminus/ui-spacing
   * @terminus/design-tokens
   * date-fns
+  
+  Using `ng add` command can help getting all the dependencies installed:
+  ```bash
+    ng add @terminus/ui-cohort-date-range
+  ```
 
 ### Modules that need to be in NgModule
 

@@ -45,6 +45,12 @@
   * text-mask-core
   * date-fns
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-search
+```
+
 ### Modules that need to be in NgModule
 
   * TsSearchModule

@@ -42,6 +42,12 @@ The drawer component is designed to add side content to a section of the DOM.
   *  @terminus/ui-expansion-panel
   *  date-fns
   *  tslib
+  
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-drawer
+```
 
 ### Modules that need to be in NgModule
 

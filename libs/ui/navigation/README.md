@@ -36,6 +36,12 @@
   * @terminus/ui-tooltip
   * @terminus/ui-utilities
 
+Using `ng add` command can help getting all the dependencies installed:
+
+```bash
+    ng add @terminus/ui-navigation
+```
+
 ### Modules that need to be in NgModule
 
   * BrowserAnimationsModule

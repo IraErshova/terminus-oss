@@ -19,17 +19,20 @@
 
 ### Packages that need to be installed:
 
+  * @angular/cdk
+  * @angular/material
+  * @terminus/ngx-tools
+  * @terminus/design-tokens
   * @terminus/ui-button
   * @terminus/ui-icon
   * @terminus/ui-utilities
-  * @terminus/ngx-tools
-  * @terminus/design-tokens
   * @terminus/ui-styles
-  * @angular/material/button
-  * @angular/material/progress-spinner
-  * @angular/cdk/a11y
-  * @angular/cdk/coercion
   * date-fns
+  
+  Using `ng add` command can help getting all the dependencies installed:
+  ```bash
+    ng add @terminus/ui-button
+  ```
 
 ### Modules that need to be in NgModule
 
