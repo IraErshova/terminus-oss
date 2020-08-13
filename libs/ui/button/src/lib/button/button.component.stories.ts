@@ -1,4 +1,4 @@
-import { faHome } from '@fortawesome/pro-regular-svg-icons/faHome';
+import { faHome } from '@fortawesome/pro-solid-svg-icons/faHome';
 import { action } from '@storybook/addon-actions';
 import {
   boolean,
